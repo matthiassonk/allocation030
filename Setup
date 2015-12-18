@@ -1,2 +1,22 @@
+extension [gis]
+
+globals [gis-globals]
+
+
+
 Setup
+  procedure gis-setup
+  procedure patch-setup
+  procedure agents-setup
+end
+
+procedure gis-setup
+  gis: dataset laden
+  gis: world-envelope bestimmen
+  gis: set drawing-color
+  gis: draw
+end  
+
+procedure patch-setup
+  
 
