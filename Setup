@@ -18,31 +18,219 @@ procedure gis-setup
 end  
 
 procedure patch-setup
+
  patchbreed Mitte
-  342.117 Einwohner
-patchbreed Friedrichshain-Kreuzberg 	
-  275.601 Einwohner
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+    migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+      
+patchbreed Friedrichshain-Kreuzberg 
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
 patchbreed Pankow 	
-  377.638 Einwohner
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
 patchbreed Charlottenburg-Wilmersdorf	
-  324.931 Einwohner
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
 patchbreed Spandau	
-  229.267 Einwohner
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
 patchbreed Steglitz-Zehlendorf 	
-  298.341 Einwohner
-patchbreed Tempelhof-Schöneberg 	
-  335.354 Einwohner
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert 
+patchbreed Tempelhof-Schöneberg
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert 
 patchbreed Neukölln	
-  319.658 Einwohner
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert 
 patchbreed Treptow-Köpenick
-  245.203 Einwohner
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
 patchbreed Marzahn-Hellersdorf 
-  253.748 Einwohner
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
 patchbreed Lichtenberg
-  266.307 Einwohner
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
 patchbreed Reinickendorf
-  244.861 Einwohner  
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+      
 end
 
 procedure agents-setup
+  create agentbreed
+  eine passende Form, Farbe, Größe, etc.
+    procedure verteilungsschlüssel
+end
+
+procedure verteilungsschlüssel
+ verteilung auf basis von patchwerten
+ 
+  if Verteilungsschlüssel "a" 
+  set verteilung a
+  
+  if Verteilungsschlüssel "b" 
+  set verteilung b
+  
+  if Verteilungsschlüssel "c" 
+  set verteilung c
+end
+
+verteilung a
+  setxy blubb
+end
+
+verteilung b
+  setxy blubbb
+end
+
+veretilung c
+  setxy blubbb
+end
+  
   
