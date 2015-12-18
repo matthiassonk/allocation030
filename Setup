@@ -2,6 +2,16 @@ extension [gis]
 
 globals [gis-globals]
 
+patch-own [migationsanteil 
+          studentenanteil 
+          altersdurchschnitt 
+          bevölkerung 
+          steueraufkommen 
+          wohnfläche 
+          gesamtfläche 
+          leerstand
+          d-wert
+          ]
 
 
 Setup
