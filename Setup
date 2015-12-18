@@ -1,2 +1,251 @@
+extension [gis]
+
+globals [gis-globals]
+
+patch-own [migationsanteil 
+          studentenanteil 
+          altersdurchschnitt 
+          bevölkerung 
+          steueraufkommen 
+          wohnfläche 
+          gesamtfläche 
+          leerstand
+          d-wert
+          ]
+
+
 Setup
+  procedure gis-setup
+  procedure patch-setup
+  procedure agents-setup
+end
+
+procedure gis-setup
+  gis: dataset laden
+  gis: world-envelope bestimmen
+  gis: set drawing-color
+  gis: draw
+end  
+
+procedure patch-setup
+
+ patchbreed Mitte
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+    migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+      
+patchbreed Friedrichshain-Kreuzberg 
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+patchbreed Pankow 	
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+patchbreed Charlottenburg-Wilmersdorf	
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+patchbreed Spandau	
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+patchbreed Steglitz-Zehlendorf 	
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert 
+patchbreed Tempelhof-Schöneberg
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert 
+patchbreed Neukölln	
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert 
+patchbreed Treptow-Köpenick
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+patchbreed Marzahn-Hellersdorf 
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+patchbreed Lichtenberg
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+patchbreed Reinickendorf
+
+ [für d-wert]
+    set migationsanteil x
+    set studentenanteil x
+    set altersdurchschnitt x
+ [für verteilungsschlüssel]
+    set bevölkerung x
+    set steueraufkommen x
+    set wohnfläche x
+    set gesamtfläche x
+    set leerstand x
+    
+  migrationsanteil + radomfloat = d-wert
+      plabel pesicion 1 d-wert
+      
+end
+
+procedure agents-setup
+  create agentbreed
+  eine passende Form, Farbe, Größe, etc.
+    procedure verteilungsschlüssel
+end
+
+procedure verteilungsschlüssel
+ verteilung auf basis von patchwerten
+ 
+  if Verteilungsschlüssel "a" 
+  set verteilung a
+  
+  if Verteilungsschlüssel "b" 
+  set verteilung b
+  
+  if Verteilungsschlüssel "c" 
+  set verteilung c
+end
+
+verteilung a
+  setxy blubb
+end
+
+verteilung b
+  setxy blubbb
+end
+
+veretilung c
+  setxy blubbb
+end
+  
+  
+
+    Status API Training Shop Blog About Pricing 
+
+    © 2015 GitHub, Inc. Terms Privacy Security Contact Help Setup
 
