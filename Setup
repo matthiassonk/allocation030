@@ -18,5 +18,31 @@ procedure gis-setup
 end  
 
 procedure patch-setup
-  
+ patchbreed Mitte
+  342.117 Einwohner
+patchbreed Friedrichshain-Kreuzberg 	
+  275.601 Einwohner
+patchbreed Pankow 	
+  377.638 Einwohner
+patchbreed Charlottenburg-Wilmersdorf	
+  324.931 Einwohner
+patchbreed Spandau	
+  229.267 Einwohner
+patchbreed Steglitz-Zehlendorf 	
+  298.341 Einwohner
+patchbreed Tempelhof-Schöneberg 	
+  335.354 Einwohner
+patchbreed Neukölln	
+  319.658 Einwohner
+patchbreed Treptow-Köpenick
+  245.203 Einwohner
+patchbreed Marzahn-Hellersdorf 
+  253.748 Einwohner
+patchbreed Lichtenberg
+  266.307 Einwohner
+patchbreed Reinickendorf
+  244.861 Einwohner  
+end
 
+procedure agents-setup
+  
